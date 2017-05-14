@@ -112,7 +112,7 @@ void Actions(cocos2d::EventKeyboard::KeyCode code, cocos2d::Event * event)
 			SCENE->player->MoveRight();
 		}
 	}
-	if (code == cocos2d::EventKeyboard::KeyCode::KEY_W)
+	if (code == cocos2d::EventKeyboard::KeyCode::KEY_U)
 	{
 		SCENE->Shoot();
 	}
