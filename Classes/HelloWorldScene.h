@@ -2,15 +2,15 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
-#include <TCreature.h>
-#include <THero.h>
-#include <TZombie.h>
-#include <TZombieWalker.h>
-#include <TZombieMusic.h>
-#include <TPudge.h>
-#include <TSkeleton.h>
-#include <TSkeletonSword.h>
-#include <TSkeletonSpear.h>
+#include "TCreature.h"
+#include "THero.h"
+#include "TZombie.h"
+#include "TZombieWalker.h"
+#include "TZombieMusic.h"
+#include "TPudge.h"
+#include "TSkeleton.h"
+#include "TSkeletonSword.h"
+#include "TSkeletonSpear.h"
 #include <vector>
 #include <iostream>
 #include <fstream>
