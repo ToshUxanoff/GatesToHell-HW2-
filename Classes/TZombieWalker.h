@@ -7,4 +7,5 @@ class TZombieWalker :
 public:
 	TZombieWalker(size_t XPos, size_t YPos);
 	void Live();
+	~TZombieWalker() = deafult;
 }; 
