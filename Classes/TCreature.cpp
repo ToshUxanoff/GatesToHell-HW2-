@@ -1,6 +1,5 @@
 #pragma once
 #include <TCreature.h>
-#include <vld.h>
 #include "cocos2d.h"
 USING_NS_CC;
 
