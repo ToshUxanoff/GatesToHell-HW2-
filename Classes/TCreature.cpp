@@ -1,6 +1,6 @@
-#include <TCreature.h>
-
 #pragma once
+#include <TCreature.h>
+#include <vld.h>
 #include "cocos2d.h"
 USING_NS_CC;
 
@@ -35,3 +35,9 @@ USING_NS_CC;
 	{
 		Y_coord += y;
 	}
+	void TCreature::Live()
+	{}
+	void TCreature::ChopChop()
+	{}
+	void TCreature::CreakCreak()
+	{}
