@@ -2,18 +2,19 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
-#include "TCreature.h"
-#include "THero.h"
-#include "TZombie.h"
-#include "TZombieWalker.h"
-#include "TZombieMusic.h"
-#include "TPudge.h"
-#include "TSkeleton.h"
-#include "TSkeletonSword.h"
-#include "TSkeletonSpear.h"
+#include <TCreature.h>
+#include <THero.h>
+#include <TZombie.h>
+#include <TZombieWalker.h>
+#include <TZombieMusic.h>
+#include <TPudge.h>
+#include <TSkeleton.h>
+#include <TSkeletonSword.h>
+#include <TSkeletonSpear.h>
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include "TRaii.h"
 USING_NS_CC;
 
 class HelloWorld 
@@ -31,15 +32,16 @@ class HelloWorld
 	size_t Score = 0; 
 	std::ofstream Highscore; // Для сохранения результатов
 	// Монстры
-	TSkeletonSword* skeleton1;
-	TSkeletonSpear* skeleton2;
-	TPudge* pudge;
-	TZombieMusic* zombie1;
-	TZombieWalker* zombie2;
+	TRaii skeleton1;
+	TRaii skeleton2;
+	TRaii pudge;
+	TRaii zombie2;
+	TRaii zombie1;
 public:
 	
 	THero* player;
 	~HelloWorld();
+	
 	void Shoot();
 	void HealHouse();
 	void Incineration();
