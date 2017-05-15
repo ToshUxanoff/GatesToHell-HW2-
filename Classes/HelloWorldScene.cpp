@@ -1,6 +1,5 @@
 #include "HelloWorldScene.h"
 #include <string>
-#include <vld.h>
 USING_NS_CC;
 
 HelloWorld * SCENE = nullptr;
