@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
 #include <string>
+#include <vld.h>
 USING_NS_CC;
 
 HelloWorld * SCENE = nullptr;
@@ -155,6 +156,7 @@ void HelloWorld::UpdateShoot(float dt)
 			{
 				TargetsVec.erase(jt);
 				SCENE->removeChild(target, 1);
+				
 				Bullets.erase(it);
 				SCENE->player->GetModel()->removeChild(bullet, 1);
 				Score++;
@@ -190,6 +192,7 @@ void HelloWorld::Update(float dt)
 				player->GetDamage(1);
 				TargetsVec.erase(jt);
 				SCENE->removeChild(target, 1);
+				target = nullptr;
 				break;
 			}
 		}
@@ -315,11 +318,6 @@ bool HelloWorld::init()
 HelloWorld::~HelloWorld()
 {
 	delete player;
-	delete pudge;
-	delete zombie1;
-	delete zombie2;
-	delete skeleton1;
-	delete skeleton2;
 }
 
 void HelloWorld::menuCloseCallback(Ref* pSender)
@@ -329,3 +327,4 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
     exit(0);
 #endif
 }
+
